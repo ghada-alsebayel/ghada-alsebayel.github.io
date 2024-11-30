@@ -112,6 +112,17 @@ footer {
     color: #5e4a76; /* Highlight with lighter muted purple */
 }
 
+.youtube-icon {
+    text-align: center;
+    margin-top: 10px; /* Adds spacing between the images and the icon */
+}
+
+.youtube-icon a {
+    color: red;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
 
 /* Carousel Styling */
 .carousel {
