@@ -1,3 +1,4 @@
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -61,4 +62,52 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+/* Research Section */
+.research-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px; /* Space between research items */
+    gap: 15px;
+    padding: 10px;
+    border: 1px solid #ddd; /* Light border for separation */
+    border-radius: 8px;
+    background-color: #f9f9f9; /* Subtle background for each item */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Shadow for effect */
+}
+
+.research-image {
+    width: 200px; /* Wider image for a rectangular look */
+    height: 120px; /* Shorter height for rectangle proportions */
+    object-fit: cover; /* Ensures the image fills the area proportionally */
+    border-radius: 8px; /* Rounded corners */
+    flex-shrink: 0; /* Prevent the image from resizing */
+}
+
+.research-text {
+    flex: 1; /* Allow text to take up the remaining space */
+}
+
+.research-text h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #5e4a76; /* Use the muted purple for titles */
+}
+
+.research-text p {
+    font-size: 0.95em;
+    color: #333;
+    line-height: 1.5;
+    margin-top: 5px;
+}
+
+.research-item a {
+    text-decoration: none;
+    color: #4a3a5a; /* Darker muted purple for links */
+}
+
+.research-item a:hover {
+    text-decoration: underline;
+    color: #5e4a76; /* Highlight with lighter muted purple */
 }
