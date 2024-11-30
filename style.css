@@ -67,8 +67,7 @@ footer {
 /* Research Section */
 .research-item {
     display: flex;
-    flex-direction: column; /* Stack image and text vertically */
-    align-items: center; /* Center everything horizontally */
+    align-items: flex-start;
     margin-bottom: 30px; /* Space between research items */
     gap: 15px;
     padding: 10px;
@@ -78,9 +77,16 @@ footer {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Shadow for effect */
 }
 
+.research-image {
+    width: 200px; /* Wider image for a rectangular look */
+    height: 120px; /* Shorter height for rectangle proportions */
+    object-fit: cover; /* Ensures the image fills the area proportionally */
+    border-radius: 8px; /* Rounded corners */
+    flex-shrink: 0; /* Prevent the image from resizing */
+}
+
 .research-text {
-    text-align: center; /* Center the text horizontally */
-    max-width: 700px; /* Optional: Limit text width for better readability */
+    flex: 1; /* Allow text to take up the remaining space */
 }
 
 .research-text h3 {
@@ -106,6 +112,7 @@ footer {
     color: #5e4a76; /* Highlight with lighter muted purple */
 }
 
+
 /* Carousel Styling */
 .carousel {
     position: relative;
@@ -114,8 +121,6 @@ footer {
     overflow: hidden;
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: flex; /* Ensure the carousel is centered */
-    justify-content: center; /* Center the carousel horizontally */
 }
 
 .carousel img {
