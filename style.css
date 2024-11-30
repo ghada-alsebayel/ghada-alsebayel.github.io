@@ -111,3 +111,23 @@ footer {
     text-decoration: underline;
     color: #5e4a76; /* Highlight with lighter muted purple */
 }
+/* Carousel Styling */
+.carousel {
+    position: relative;
+    width: 200px; /* Adjust to match your layout */
+    height: 120px; /* Maintain rectangle proportions */
+    overflow: hidden;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.carousel img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
