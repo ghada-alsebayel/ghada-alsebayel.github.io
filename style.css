@@ -149,3 +149,29 @@ footer {
     left: 0;
     transition: opacity 0.5s ease-in-out;
 }
+
+/* Bio Styling */
+.research-text .bio {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+/* Citation Styling */
+.research-text .citation {
+    font-size: 0.85em; /* Smaller text */
+    color: #777;
+    line-height: 1.4;
+    margin-top: 10px;
+    display: block;
+}
+
+/* Make the citation span the entire width below the image */
+.research-item {
+    flex-wrap: wrap;
+}
+
+.research-item .research-text {
+    flex: 1 1 100%; /* Allow text to occupy full width */
+}
