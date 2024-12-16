@@ -194,3 +194,70 @@ footer {
     color: #4a3a5a; /* Slightly darker purple on hover */
     text-decoration: underline;
 }
+
+
+
+
+/* Featured News Section */
+.featured-news {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f4f4f4; /* Light gray background */
+    margin-bottom: 30px;
+}
+
+.featured-news h2 {
+    color: #5e4a76; /* Muted Purple */
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+/* Slideshow Container */
+.slideshow-container {
+    position: relative;
+    max-width: 700px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* News Slides */
+.news-slide {
+    display: none;
+    padding: 20px;
+}
+
+.news-slide h3 {
+    color: #5e4a76;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.news-slide p {
+    color: #555;
+    font-size: 1em;
+}
+
+/* Navigation Dots */
+.dots-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active, .dot:hover {
+    background-color: #5e4a76;
+}
