@@ -239,6 +239,13 @@ footer {
     z-index: 1; /* Place overlay above the background but below the text */
 }
 
+.slideshow-container img {
+    width: 100%; /* Image width matches the slide width */
+    height: 100%; /* Image height matches the slide height */
+    object-fit: cover; /* Images are scaled to cover the entire slide, cropping if necessary */
+    border-radius: 10px; /* Rounds the corners of the images to match the slider */
+}
+
 /* News Slides */
 .news-slide {
     position: relative;
@@ -273,13 +280,6 @@ footer {
     font-size: 1em;
     color: white;
     margin-bottom: 0;
-}
-
-.news-slide img {
-    width: 100%; /* Image width matches the slide width */
-    height: 100%; /* Image height matches the slide height */
-    object-fit: cover; /* Images are scaled to cover the entire slide, cropping if necessary */
-    border-radius: 10px; /* Rounds the corners of the images to match the slider */
 }
 
 /* Navigation Dots */
