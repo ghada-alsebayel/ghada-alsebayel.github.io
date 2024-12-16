@@ -247,7 +247,8 @@ footer {
     text-align: center;
 }
 
-.news-slide h3 {
+.news-slide h3,
+.news-slide h3 a {
     font-size: 1.5em;
     margin-bottom: 10px;
     color: white;
