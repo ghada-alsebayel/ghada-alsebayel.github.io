@@ -275,6 +275,13 @@ footer {
     margin-bottom: 0;
 }
 
+.news-slide img {
+    width: 100%; /* Image width matches the slide width */
+    height: 100%; /* Image height matches the slide height */
+    object-fit: cover; /* Images are scaled to cover the entire slide, cropping if necessary */
+    border-radius: 10px; /* Rounds the corners of the images to match the slider */
+}
+
 /* Navigation Dots */
 .dots-container {
     text-align: center;
