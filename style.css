@@ -221,7 +221,6 @@ footer {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    background: url('images/background.jpg') no-repeat center center/cover; /* Background image */
     min-height: 200px; /* Set a minimum height to match the white box dimensions */
     color: white; /* Set text color for contrast against the background */
     text-align: center;
@@ -240,10 +239,10 @@ footer {
 }
 
 .slideshow-container img {
-    width: 100%; /* Image width matches the slide width */
-    height: 100%; /* Image height matches the slide height */
-    object-fit: cover; /* Images are scaled to cover the entire slide, cropping if necessary */
-    border-radius: 10px; /* Rounds the corners of the images to match the slider */
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Makes the image cover the container while maintaining aspect ratio */
+  border-radius: 10px; /* Ensures the image follows the rounded corners */
 }
 
 /* News Slides */
