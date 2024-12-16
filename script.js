@@ -1,24 +1,35 @@
 <script>
-    // Function to start the carousel
-    function startCarousel(carousel) {
-        const images = carousel.querySelectorAll('.carousel-image');
-        let currentIndex = 0;
+    let slideIndex = 0;
+    showSlides();
 
-        setInterval(() => {
-            // Hide the current image
-            images[currentIndex].style.display = 'none';
+    function showSlides() {
+        let slides = document.getElementsByClassName("news-slide");
+        let dots = document.getElementsByClassName("dot");
 
-            // Move to the next image
-            currentIndex = (currentIndex + 1) % images.length;
+        // Hide all slides
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
 
-            // Show the next image
-            images[currentIndex].style.display = 'block';
-        }, 3000); // Change every 3 seconds
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+
+        // Remove 'active' class from all dots
+        for (let i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+
+        // Display the current slide and mark the dot as active
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+
+        setTimeout(showSlides, 5000); // Change slide every 5 seconds
     }
 
-    // Initialize all carousels on the page
-    document.addEventListener('DOMContentLoaded', () => {
-        const carousels = document.querySelectorAll('.carousel');
-        carousels.forEach(carousel => startCarousel(carousel));
-    });
+    function currentSlide(n) {
+        slideIndex = n - 1;
+        showSlides();
+    }
 </script>
