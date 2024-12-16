@@ -1,35 +1,32 @@
-<script>
-    let slideIndex = 0;
-    showSlides();
+console.log("script.js is loaded");
 
-    function showSlides() {
-        let slides = document.getElementsByClassName("news-slide");
-        let dots = document.getElementsByClassName("dot");
+let slideIndex = 0;
+showSlides();
 
-        // Hide all slides
-        for (let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
+function showSlides() {
+    console.log("showSlides function is running");
+    let slides = document.getElementsByClassName("news-slide");
+    let dots = document.getElementsByClassName("dot");
 
-        slideIndex++;
-        if (slideIndex > slides.length) {
-            slideIndex = 1;
-        }
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
 
-        // Remove 'active' class from all dots
-        for (let i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
+    slideIndex++;
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
 
-        // Display the current slide and mark the dot as active
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+
+    if (slides.length > 0) {
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
-
-        setTimeout(showSlides, 5000); // Change slide every 5 seconds
+    } else {
+        console.error("No slides found with class 'news-slide'");
     }
 
-    function currentSlide(n) {
-        slideIndex = n - 1;
-        showSlides();
-    }
-</script>
+    setTimeout(showSlides, 5000);
+}
