@@ -173,3 +173,24 @@ footer {
     margin-top: 10px;
     width: 100%; /* Ensure the citation spans the full width */
 }
+
+/* Video Link Styling */
+.video-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 10px;
+    font-size: 1em;
+    color: #5e4a76; /* Muted purple for consistency */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.video-link i {
+    font-size: 1.2em;
+}
+
+.video-link:hover {
+    color: #4a3a5a; /* Slightly darker purple on hover */
+    text-decoration: underline;
+}
