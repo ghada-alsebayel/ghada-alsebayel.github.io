@@ -302,4 +302,15 @@ footer {
     background-color: #5e4a76;
 }
 
+a {
+    color: #4a3a5a;        /* Sets the text color */
+    text-decoration: none;  /* Removes the underline */
+    font-weight: bold;  /* Makes the text bold */
+}
+
+a:hover {
+    text-decoration: underline; /* Underlines on hover */
+}
+
+
 
